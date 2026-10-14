@@ -1,0 +1,62 @@
+{
+  "selected_model": "logistic_regression",
+  "selection_metric": "validation log loss",
+  "validation_season": "2024/25",
+  "test_season": "2025/26",
+  "training_matches": 3040,
+  "validation_matches": 380,
+  "test_matches": 380,
+  "total_matches": 4180,
+  "data_cutoff": "2026-05-24",
+  "validation": {
+    "prior_baseline": {
+      "accuracy": 0.40789473684210525,
+      "log_loss": 1.081807487536623,
+      "brier_multiclass": 0.6562255453601109
+    },
+    "logistic_regression": {
+      "accuracy": 0.5210526315789473,
+      "log_loss": 0.99084689016674,
+      "brier_multiclass": 0.5927919672404228
+    },
+    "gradient_boosting": {
+      "accuracy": 0.5157894736842106,
+      "log_loss": 1.013598234712621,
+      "brier_multiclass": 0.6025766215090137
+    }
+  },
+  "test": {
+    "prior_baseline": {
+      "accuracy": 0.4263157894736842,
+      "log_loss": 1.0850840611841535,
+      "brier_multiclass": 0.6565139701104613
+    },
+    "logistic_regression": {
+      "accuracy": 0.5026315789473684,
+      "log_loss": 1.0295780485674888,
+      "brier_multiclass": 0.6182681057964364
+    },
+    "gradient_boosting": {
+      "accuracy": 0.4921052631578947,
+      "log_loss": 1.055002110454952,
+      "brier_multiclass": 0.632373771123478
+    }
+  },
+  "features": [
+    "elo_diff",
+    "home_elo",
+    "away_elo",
+    "points_diff",
+    "scored_diff",
+    "conceded_diff",
+    "home_history",
+    "away_history"
+  ],
+  "labels": [
+    "A",
+    "D",
+    "H"
+  ],
+  "python": "3.11.15",
+  "sklearn": "1.9.1"
+}
